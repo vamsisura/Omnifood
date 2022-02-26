@@ -1,0 +1,507 @@
+header {
+    width: 100%;
+    height: 20vh;
+    background-color: #fdf2e9;
+}
+#head-logo img {
+    width: 17%;
+    padding-top: 3rem;
+    margin-left: 3rem;
+}
+#nav-links{
+    float: right;
+}
+.section-hero {
+    background-color: #fdf2e9;
+}
+#nav-links ul li {
+    list-style: none;
+    font-size: 2rem;
+    margin-right: 5rem;
+}
+#nav-links ul{
+    display: flex;
+}
+#last {
+    padding: 1rem 2rem;
+    background-color: orange;
+    color: white;
+    border-radius: 2rem;
+    margin-top: -1rem;
+}
+.hero {
+    /* max-width: 100rem;
+    background-color: red;
+    margin: 0 auto;
+    height: 50rem; */
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+    gap: 9.6rem;
+}
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+}
+
+.hero-img 
+{
+    width: 100%;
+}
+
+.section-featured {
+    padding : 4.8rem 0 3.2rem 0;
+}
+
+.heading-feaured-in {
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    color: #888;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+}
+#link1 {
+    font-size: 2rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: orange;
+    border-radius: 1rem;
+    margin-right: 2rem;
+}
+#link2 {
+    font-size: 2rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: orange;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin-right: 2rem;
+}
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos img {
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 50%;
+}
+
+.section-how {
+    /* max-width: 120rem;    */
+    padding: 9.6rem 0;
+}
+
+
+.section-how div {
+    /* padding: 10%; */
+    font-size: 2rem; 
+}
+
+
+.step-number {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+}
+
+.step-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.step-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position : relative;
+}
+
+.step-img-box img {
+    width: 35%;
+}
+
+.step-img-box::before {
+  
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: #fdf2e9;
+    z-index: -2;
+}
+
+
+.step-img-box::before, .step-img-box::after {
+    content: " ";
+    position : absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    
+}
+
+.step-img-box::after  {
+    width: 50%;
+    padding-bottom: 50%;
+    background-color: #fae5d3;
+    z-index: -1;
+}
+
+.section-meals {
+    padding: 9.6rem 0;
+}
+
+.meal {
+    border-radius: 1.1rem;
+    overflow: hidden;
+    box-shadow: 0 3.2rem 6.4rem rgb(0 0 0 / 6%);
+}
+
+.meal:hover {
+    transform: translateY(-1rem);
+    transition: all 0.4s;
+}
+
+.meal-img {
+    width: 100%;
+}
+
+.meal-content {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tags {
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.tag {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 10rem;
+}
+
+.tag--vegetarian {
+    background-color: #51cf66;
+}
+.tag--vegan {
+    background-color: #94d82d;
+}
+.tag--paleo {
+    background-color: #ffd43b;
+}
+
+.meal-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem
+}
+
+.meal-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.meal-icon {
+    color: #e67e22;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.menu-list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.all-recipes {
+    font-size: 1.8rem;
+}
+
+.section-testimonials {
+    background-color: #fdf2e9;
+}
+
+.testimonialGrid {
+    grid-template-columns: 55fr 45fr !important;
+}
+
+.testimonials {
+    padding: 9.6rem;
+}
+
+.testimonial img {
+    width: 6.4rem;;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial blockquote {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+}
+
+.testimonial p {
+    font-size: 1.6rem;
+    color: #6f6f6f;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img{
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+.section-pricing {
+    padding: 9.6rem 0;
+}
+
+.margin-bottom-md{
+    margin-bottom: 4.8rem;
+    /* background-color: black; */
+}
+
+.pricing-card {
+    width: 75%;
+    border-radius: 1.1rem;
+
+}
+
+.pricing-card-starter{
+    justify-self: end;
+    border: 2px solid #fdf2e9;
+    padding: 4.6rem;
+}
+
+.pricing-card-complete {
+    background-color: #fdf2e9;
+    padding: 4.8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-card-complete::after {
+    content: "Best Value";
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    background-color: #ffd43b;
+    padding: 0.8rem 8rem;
+    text-transform: uppercase;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 6%;
+    right: -18%;
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+
+.plan-heading {
+    font-weight: 600 !important;
+    font-size: 2rem !important;
+}
+
+.plan-pricing {
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
+
+.plan-pricing span:nth-child(1) {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-right: 0.8rem;
+}
+
+.plan-text{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #6f6f6f;
+}
+
+.plan-sign-up{
+    text-align: center;
+    margin-top: 4.8rem;
+}
+
+.plan-details-container {
+    margin-bottom: 9.6rem;
+}
+
+.plan-details {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.feature-icon {
+    color: #e67e22;
+    height: 3.2rem;
+    width: 3.2rem;
+    background-color: #fdf2e9;
+    margin-bottom: 3.2rem;
+    padding: 1.6rem;
+    border-radius: 50%;
+}
+
+.feature-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.feature-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.section-contactUs {
+    padding: 9.6rem 0 ;
+}
+
+.contact-form-grid {
+    grid-template-columns: 2fr 1fr;
+    background-color: #eb984e;
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.cfg-text-box {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+} 
+
+.cfg-heading {
+    margin-bottom: 3.2rem !important;
+}
+
+.cfg-description {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.form-grid {
+    display: grid;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+    align-items: end;
+}
+
+.form-grid-field label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+/* .form-grid-field button {
+    align-items: end;
+} */
+
+.form-grid-field input, .form-grid-field select, .form-grid-field button {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    border-radius: 9px;
+    border: none;
+    background-color: #fdf2e9;
+    font-family: inherit;
+}
+
+.cfg-img-box {
+    background-image: linear-gradient( to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35) ), url('../Media/eating.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    padding: 12.8rem 0;
+    border-top: 1px solid #eee;
+}
+
+.footer-grid {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer-info img,#header-img {
+    width: 15.6rem;
+    margin-bottom: 2.4rem;
+}
+
+.social-media-icon-container {
+    display: flex;
+    gap: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.social-media-icon {
+    /* color: #333; */
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.copyright{
+    font-size: 1.4rem !important;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: auto;
+} 
+
+.address, .copyright {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+}
+
+.footer-info ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-info ul li {
+    font-size: 1.6rem;
+}
+
+.footer-info-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
